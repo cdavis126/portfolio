@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-bar {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .bottom-bar {
+    background-color: #6699CC;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
