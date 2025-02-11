@@ -1,9 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Quicksand:wght@400;600&display=swap');
 
+/* Define CSS Variables */
 :root {
   --primary-pink: #FF66C4;
   --secondary-purple: #CB66E6;
@@ -14,6 +12,7 @@
   --font-body: 'Quicksand', sans-serif;
 }
 
+/* Bootstrap-Compatible Global Styles */
 body {
   margin: 0;
   padding: 0;
@@ -22,27 +21,28 @@ body {
   font-family: var(--font-body);
 }
 
+/* Typography */
 h1, h2 {
   font-family: var(--font-heading);
 }
 
 h1 {
-  font-size: 48.2px;
+  font-size: 3rem; /* Bootstrap uses rem */
   font-weight: bold;
   color: var(--primary-pink);
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--secondary-purple);
 }
 
 p {
-  font-size: 16px;
-  font-family: var(--font-body);
+  font-size: 1rem;
   color: var(--text-white);
 }
 
+/* Links */
 a {
   text-decoration: none;
   color: var(--primary-pink);
@@ -50,4 +50,21 @@ a {
 
 a:hover {
   color: var(--secondary-purple);
+}
+
+/* Bootstrap-Specific Adjustments */
+.btn-custom {
+  background: var(--gradient);
+  border: none;
+  color: var(--text-white);
+}
+
+.btn-custom:hover {
+  background: var(--secondary-purple);
+}
+
+/* Bootstrap Grid Helper */
+.container {
+  max-width: 1200px;
+  padding: 1rem;
 }
