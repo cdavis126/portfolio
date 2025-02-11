@@ -3,18 +3,37 @@
     flex-direction: column;
   }
   
+  /* Top Bar (Logo Bar) */
   .top-bar {
-    background-color: #003366;
+    background: var(--gradient);
     padding: 10px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
   
+  .top-bar .logo {
+    height: 50px; /* Adjust as needed */
+    margin-right: 20px;
+  }
+  
+  /* Bottom Navigation Bar */
   .bottom-bar {
-    background-color: #6699CC;
+    background-color: var(--bg-black);
     padding: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
   }
+  
+  .bottom-bar a {
+    color: var(--text-white);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .bottom-bar a:hover {
+    color: var(--primary-pink);
+  }
+  
   

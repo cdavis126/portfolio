@@ -1,11 +1,13 @@
 import '../styles/home.css';
+import profilePic from '../assets/cherieprofilepic.jpg'; // don't forget to link image
 
 const ProfileBox = () => {
   return (
     <section className="profile-box">
-      <img src="/profile-pic.jpg" alt="Cherie" className="profile-pic" />
+      <h1 className="profile-name">Cherie Davis</h1>
+      <img src={profilePic} alt="Cherie" className="profile-pic" />
       <div className="profile-info">
-        <p><strong>Location:</strong> Your City, State</p>
+        <p><strong>Location:</strong> Lexington, KY</p>
         <p><strong>Pronouns:</strong> She/Her</p>
         <p><strong>Mood:</strong> 😊 Feeling creative</p>
         <div className="profile-links">
@@ -18,3 +20,5 @@ const ProfileBox = () => {
 };
 
 export default ProfileBox;
+
+
