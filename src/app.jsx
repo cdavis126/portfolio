@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/headereader';
-import Footer from './components/footer';
-import Home from './pages/home';
-import AboutMe from './pages/aboutme';
-import Portfolio from './pages/portfolio';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import Contact from './pages/contactontact';
+
 import './styles/global.css'; // Optional global styles
 
 const App = () => {

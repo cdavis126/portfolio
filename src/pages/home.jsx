@@ -1,4 +1,4 @@
-import ProfileBox from './../components/profilebox';
+import ProfileBox from '../components/profilebox';
 import ContactBox from '../components/contactbox';
 import CareerSnapshot from '../components/CareerSnapshot';
 import StatusBox from '../components/statusbox';
