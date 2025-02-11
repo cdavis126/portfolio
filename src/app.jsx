@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './pages/Home';  // ✅ Add this if missing!
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
@@ -15,7 +16,7 @@ const App = () => {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />  {/* ✅ This now works */}
           <Route path="/about" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
@@ -28,3 +29,4 @@ const App = () => {
 };
 
 export default App;
+
