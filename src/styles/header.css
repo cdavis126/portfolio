@@ -1,39 +1,42 @@
 .header {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Top Bar (Logo Bar) */
-  .top-bar {
-    background: var(--gradient);
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .top-bar .logo {
-    height: 50px; /* Adjust as needed */
-    margin-right: 20px;
-  }
-  
-  /* Bottom Navigation Bar */
-  .bottom-bar {
-    background-color: var(--bg-black);
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .bottom-bar a {
-    color: var(--text-white);
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .bottom-bar a:hover {
-    color: var(--primary-pink);
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar (Logo Bar) */
+.top-bar {
+  background: var(--gradient);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-bar .logo {
+  height: 58.5px; /* Increased by 17% */
+  margin-left: auto; /* Aligns to the right */
+}
+
+/* Bottom Navigation Bar */
+.bottom-bar {
+  background: var(--gradient); /* Updated to match branding */
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bottom-bar a {
+  color: var(--primary-pink); /* Updated to pink */
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--font-heading); /* Matches branding */
+  text-transform: uppercase; /* Optional for styling */
+}
+
+.bottom-bar a:hover {
+  color: var(--secondary-purple);
+  text-decoration: underline;
+}
+
   

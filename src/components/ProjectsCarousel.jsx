@@ -1,8 +1,8 @@
 import { Carousel, CarouselItem } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import project1 from "../assets/Portfolio Item 1.png";
-import project2 from "../assets/Portfolio Item 2.png";
-import project3 from "../assets/Portfolio Item 3.png";
+import project1 from "../assets/PortfolioItem1.png";
+import project2 from "../assets/PortfolioItem2.png";
+import project3 from "../assets/PortfolioItem3.png";
 
 const ProjectsCarousel = () => {
   return (
