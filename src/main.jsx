@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App.jsx";  // ✅ Make sure the import is correct & matches your file name exactly
+import App from "./App.jsx";  // ✅ Must match case exactly
+ 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
