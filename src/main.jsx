@@ -1,14 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from "./App";  // ✅ Must match the exact case of the filename
-import { BrowserRouter } from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
-import './styles/global.css'; // Optional global styles
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App.jsx";  // ✅ Make sure the import is correct & matches your file name exactly
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
