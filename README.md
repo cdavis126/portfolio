@@ -1,7 +1,8 @@
 # 🚀 React Portfolio - Cherie Davis
 
 ## 🌍 Live Demo  
-Deployed React Portfolio: [Click here to view](YOUR_NETLIFY_DEPLOYMENT_URL)
+Deployed React Portfolio: [Click here to view](https://cheriedavisportfoilio.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b2d15881-6a13-4b17-a558-7895b1ccb46a/deploy-status)](https://app.netlify.com/sites/cheriedavisportfoilio/deploys))
 
 ## 📖 Description  
 The **React Portfolio** is a modern, single-page application showcasing my skills, experience, and projects in a MySpace-inspired design. This project serves as a professional portfolio where potential employers, clients, and collaborators can explore my work and get in touch with me.
