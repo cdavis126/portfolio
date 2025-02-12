@@ -1,7 +1,7 @@
 import React from "react";
-import ProfileBox from "../ProfileBox";
-import ContactBox from "../ContactBox";
-import "../styles/AboutMe.css"; // ✅ Ensure this CSS file exists
+import ProfileBox from "../components/ProfileBox";
+import ContactBox from "../components/ContactBox";
+import "../styles/About.css"; 
 
 const AboutMe = () => {
   return (
@@ -16,4 +16,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
