@@ -1,238 +1,162 @@
+/* ======= HOME PAGE LAYOUT ======= */
 .home {
-    display: flex;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 20px;
-  }
-  
-  /* Left Column */
-  .left-column {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  /* Right Column */
-  .right-column {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  /* Profile Box */
-  .profile-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .profile-name {
-    font-size: 48.2px; /* Matches brand font size */
-    font-family: var(--font-heading);
-    font-weight: bold;
-    color: var(--primary-pink);
-    margin-bottom: 10px;
-  }
-  
-  .profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    border: 2px solid var(--primary-pink);
-    margin-bottom: 15px;
-  }
-  
-  .profile-info p {
-    margin: 5px 0;
-  }
-  
-  .profile-links {
-    margin-top: 10px;
-  }
-  
-  .profile-links a {
-    font-weight: bold;
-    color: var(--primary-pink);
-    text-decoration: none;
-  }
-  
-  .profile-links a:hover {
-    color: var(--secondary-purple);
-  }
-  
-  
-  /* Mood (Optional Toggle Effect) */
-  .mood {
-    font-style: italic;
-    font-weight: bold;
-    color: var(--secondary-purple);
-  }
-  
-  /* Contact Box */
-  .contact-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    border: 2px solid var(--primary-pink);
-  }
-  
-  .contact-box h2 {
-    font-size: 20px;
-  }
-  
-  .contact-box a {
-    display: block;
-    margin: 5px 0;
-  }
-  
-  /* Career Snapshot */
-  .career-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    border-top: 5px solid var(--secondary-purple); /* Thick top border */
-  }
-  
-  .career-box h2 {
-    font-size: 22px;
-    font-family: var(--font-heading);
-    font-weight: bold;
-    color: var(--primary-pink);
-    margin-bottom: 10px;
-  }
-  
-  .career-box h3 {
-    font-size: 18px;
-    font-family: var(--font-heading);
-    color: var(--secondary-purple);
-    margin-top: 15px;
-  }
-  
-  .career-box ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .career-box li {
-    font-size: 16px;
-    font-family: var(--font-body);
-    color: var(--text-white);
-    margin-bottom: 5px;
-  }
-  
-  
-  /* Status Box */
-  .status-box {
-    border: 3px solid;
-    border-image: var(--gradient) 1;
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* Project Carousel */
-  .projects-carousel {
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .projects-carousel h2 {
-    font-size: 22px;
-    font-family: var(--font-heading);
-    font-weight: bold;
-    color: var(--primary-pink);
-    margin-bottom: 10px;
-  }
-  
-  /* Carousel text overlay */
-  .carousel-text {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: var(--text-white);
-    text-align: center;
-    padding: 10px;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .carousel-text h3 {
-    font-size: 20px;
-    font-family: var(--font-heading);
-    font-weight: bold;
-    color: var(--primary-pink);
-  }
-  
-  .carousel-text p {
-    font-size: 14px;
-    font-family: var(--font-body);
-    color: var(--text-white);
-    margin-top: 5px;
-  }
-  
-  .view-more {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    padding: 8px;
-    background: var(--gradient);
-    color: var(--bg-black);
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 5px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .view-more:hover {
-    opacity: 0.8;
-  }  
-  
-  
-  /* About Me Snippet */
-  .about-me-snippet {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    border-top: 5px solid var(--primary-pink); /* Thick top border */
-  }
-  
-  .about-me-snippet h2 {
-    font-size: 22px;
-    font-family: var(--font-heading);
-    font-weight: bold;
-    color: var(--primary-pink);
-    margin-bottom: 10px;
-  }
-  
-  .about-me-snippet p {
-    font-size: 16px;
-    font-family: var(--font-body);
-    color: var(--text-white);
-    line-height: 1.5;
-  }
-  
-  .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: var(--primary-pink);
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .read-more:hover {
-    color: var(--secondary-purple);
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Left Column */
+.left-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Right Column */
+.right-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ======= PROFILE SECTION ======= */
+.profile-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid var(--primary-pink); /* Ensuring consistency */
+}
+
+.profile-name {
+  font-size: 48.2px;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--primary-pink);
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid var(--primary-pink);
+  margin-bottom: 15px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+}
+
+/* ======= ABOUT ME SNIPPET ======= */
+.about-me-snippet {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 5px solid var(--primary-pink); 
+  text-align: center;
+}
+
+/* Avoids duplicate styles from Global.css */
+.about-me-snippet h2 {
+  font-size: 22px;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--primary-pink);
+  margin-bottom: 10px;
+}
+
+.about-me-snippet p {
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: var(--text-white);
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--primary-pink);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  color: var(--secondary-purple);
+  text-decoration: underline;
+}
+
+/* ======= ACCORDION STYLING ======= */
+.accordion {
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.accordion-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-bottom: 2px solid var(--secondary-purple);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: var(--gradient);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--bg-black);
+  border: none;
+  box-shadow: none;
+  padding: 12px;
+}
+
+.accordion-button:hover {
+  background: var(--primary-pink);
+  color: var(--text-white);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--secondary-purple);
+  color: var(--text-white);
+}
+
+.accordion-body {
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: var(--text-white);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 5px;
+}
+
+/* ======= STATUS BOX ======= */
+.status-box {
+  border: 3px solid;
+  border-image: var(--gradient) 1; /* Gradient Border */
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle Background */
+  border-radius: 10px;
+  color: var(--primary-pink);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Ensuring the text gets the gradient effect */
+.status-box h2 {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-heading);
+}

@@ -1,7 +1,7 @@
-/* Import Google Fonts */
+/* ========== IMPORT GOOGLE FONTS ========== */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Quicksand:wght@400;600&display=swap');
 
-/* Define CSS Variables */
+/* ========== DEFINE CSS VARIABLES ========== */
 :root {
   --primary-pink: #FF66C4;
   --secondary-purple: #CB66E6;
@@ -12,7 +12,7 @@
   --font-body: 'Quicksand', sans-serif;
 }
 
-/* Bootstrap-Compatible Global Styles */
+/* ========== GLOBAL BODY STYLES ========== */
 body {
   margin: 0;
   padding: 0;
@@ -21,13 +21,13 @@ body {
   font-family: var(--font-body);
 }
 
-/* Typography */
+/* ========== TYPOGRAPHY ========== */
 h1, h2 {
   font-family: var(--font-heading);
 }
 
 h1 {
-  font-size: 3rem; /* Bootstrap uses rem */
+  font-size: 3rem; /* Matches Bootstrap rem scaling */
   font-weight: bold;
   color: var(--primary-pink);
 }
@@ -42,29 +42,102 @@ p {
   color: var(--text-white);
 }
 
-/* Links */
+/* ========== LINKS ========== */
 a {
   text-decoration: none;
   color: var(--primary-pink);
+  font-weight: bold;
 }
 
 a:hover {
   color: var(--secondary-purple);
 }
 
-/* Bootstrap-Specific Adjustments */
+/* ========== BUTTON STYLES ========== */
 .btn-custom {
   background: var(--gradient);
   border: none;
   color: var(--text-white);
+  font-weight: bold;
 }
 
 .btn-custom:hover {
   background: var(--secondary-purple);
 }
 
-/* Bootstrap Grid Helper */
+/* ========== BOOTSTRAP GRID HELPERS ========== */
 .container {
   max-width: 1200px;
   padding: 1rem;
+}
+
+/* ========== BOX / CARD STYLES (RESTORED) ========== */
+.profile-box,
+.contact-box,
+.career-box,
+.projects-carousel,
+.about-me-snippet {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-pink);
+  text-align: center;
+}
+
+.profile-box h2,
+.contact-box h2,
+.career-box h2,
+.projects-carousel h2,
+.about-me-snippet h2 {
+  font-size: 22px;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--primary-pink);
+  margin-bottom: 10px;
+}
+
+/* ====== ACCORDION (PRESERVED & FIXED) ====== */
+.accordion {
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.accordion-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-bottom: 2px solid var(--secondary-purple); /* Accent Border */
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: var(--gradient);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--bg-black);
+  border: none;
+  box-shadow: none;
+  padding: 12px;
+}
+
+.accordion-button:hover {
+  background: var(--primary-pink);
+  color: var(--text-white);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--secondary-purple);
+  color: var(--text-white);
+}
+
+.accordion-body {
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: var(--text-white);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 5px;
 }

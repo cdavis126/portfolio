@@ -11,18 +11,10 @@ const ProjectsCarousel = () => {
       <Carousel className="shadow-lg rounded">
         <CarouselItem>
           <img src={project1} className="d-block w-100 rounded" alt="Programify" />
-          <Carousel.Caption>
-            <h3>Programify</h3>
-            <p>PERN stack application developed as project 2 with group members.</p>
-          </Carousel.Caption>
         </CarouselItem>
 
         <CarouselItem>
           <img src={project2} className="d-block w-100 rounded" alt="HydroHype" />
-          <Carousel.Caption>
-            <h3>HydroHype</h3>
-            <p>Water tracker and hydration calculation developed as project 1 with group members.</p>
-          </Carousel.Caption>
         </CarouselItem>
 
         <CarouselItem>

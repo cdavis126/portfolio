@@ -3,7 +3,7 @@ import ContactBox from '../components/contactbox';
 import CareerSnapshot from '../components/CareerSnapshot';
 import StatusBox from '../components/statusbox';
 import ProjectsCarousel from '../components/ProjectsCarousel';
-import AboutMeSnippet from '../components/aboutMeSnippet';
+import AboutMeSnippet from '../components/AboutMeSnippet';
 import '../styles/home.css';
 
 const Home = () => {

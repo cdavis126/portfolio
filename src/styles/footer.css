@@ -1,9 +1,10 @@
 .footer {
-    background-color: var(--bg-black);
-    color: var(--text-white);
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    border-top: 2px solid var(--secondary-purple);
-  }
+  background-color: rgba(203, 102, 230, 0.12); /* Soft transparent purple */
+  color: var(--text-white);
+  text-align: center;
+  padding: 20px 10px 10px; /* Added 20px top padding */
+  font-size: 14px;
+  border-top: 2px solid var(--secondary-purple);
+}
+
   
