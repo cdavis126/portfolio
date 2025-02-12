@@ -1,25 +1,26 @@
+/* ======= HEADER STYLES ======= */
 .header {
   display: flex;
   flex-direction: column;
 }
 
-/* Top Bar (Logo Bar) */
+/* ======= TOP BAR (LOGO) ======= */
 .top-bar {
   background: var(--gradient);
   padding: 10px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .top-bar .logo {
-  height: 58.5px; /* Increased by 17% */
-  margin-left: auto; /* Aligns to the right */
+  height: 45px; /* Adjusted for better visibility */
+  margin-right: 20px;
 }
 
-/* Bottom Navigation Bar */
+/* ======= NAVIGATION BAR ======= */
 .bottom-bar {
-  background: var(--gradient); /* Updated to match branding */
+  background: var(--gradient); /* Consistent with branding */
   padding: 12px;
   display: flex;
   justify-content: center;
@@ -27,16 +28,23 @@
 }
 
 .bottom-bar a {
-  color: var(--primary-pink); /* Updated to pink */
+  font-family: var(--font-heading);
   font-size: 18px;
   font-weight: bold;
-  font-family: var(--font-heading); /* Matches branding */
-  text-transform: uppercase; /* Optional for styling */
+  color: var(--text-white);
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .bottom-bar a:hover {
-  color: var(--secondary-purple);
+  color: var(--primary-pink);
   text-decoration: underline;
 }
+
+
+
+
+
+
 
   

@@ -1,10 +1,22 @@
 .footer {
-  background-color: rgba(203, 102, 230, 0.12); /* Soft transparent purple */
+  background: var(--gradient);
   color: var(--text-white);
   text-align: center;
-  padding: 20px 10px 10px; /* Added 20px top padding */
+  padding: 20px;
   font-size: 14px;
   border-top: 2px solid var(--secondary-purple);
+  width: 100%;
 }
+
+/* Ensure footer is properly spaced */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; /* ✅ Adds spacing before footer */
+}
+
+
+
 
   

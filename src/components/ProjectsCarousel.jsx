@@ -26,8 +26,8 @@ const ProjectsCarousel = () => {
         </CarouselItem>
       </Carousel>
       
-      <a href="/portfolio" className="btn btn-primary mt-3">View More</a>
-    </section>
+      <a href="/portfolio" className="btn btn-custom mt-3">View More</a>
+      </section>
   );
 };
 

@@ -1,0 +1,106 @@
+/* ======= ABOUT ME PAGE STYLES ======= */
+.about-container {
+    text-align: center;
+    background-color: var(--bg-black);
+    padding: 40px 20px;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    color: var(--primary-pink);
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox layout for Profile & Contact side-by-side */
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  /* Profile Box Styling */
+  .profile-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    min-width: 280px;
+  }
+  
+  .profile-name {
+    font-size: 28px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    color: var(--primary-pink);
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-pink);
+    margin: 10px 0;
+  }
+  
+  .profile-info {
+    font-size: 16px;
+    color: var(--text-white);
+    font-family: var(--font-body);
+  }
+  
+  .profile-info p {
+    margin-bottom: 5px;
+  }
+  
+  .profile-links a {
+    font-weight: bold;
+    color: var(--primary-pink);
+    text-decoration: none;
+  }
+  
+  .profile-links a:hover {
+    color: var(--secondary-purple);
+    text-decoration: underline;
+  }
+  
+  /* Contact Box Styling */
+  .contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    min-width: 280px;
+  }
+  
+  .contact-box h2 {
+    font-size: 22px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    color: var(--secondary-purple);
+    margin-bottom: 10px;
+  }
+  
+  .contact-box p {
+    font-size: 16px;
+    color: var(--text-white);
+  }
+  
+  .contact-box a {
+    font-weight: bold;
+    color: var(--primary-pink);
+    text-decoration: none;
+  }
+  
+  .contact-box a:hover {
+    color: var(--secondary-purple);
+    text-decoration: underline;
+  }
+  

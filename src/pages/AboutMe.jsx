@@ -1,12 +1,19 @@
-import React from 'react';
+import React from "react";
+import ProfileBox from "../ProfileBox";
+import ContactBox from "../ContactBox";
+import "../styles/AboutMe.css"; // ✅ Ensure this CSS file exists
 
 const AboutMe = () => {
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>This is the About Me page.</p>
+    <div className="about-container">
+      <h1 className="about-title">About Me</h1>
+      <div className="about-content">
+        <ProfileBox />
+        <ContactBox />
+      </div>
     </div>
   );
 };
 
-export default AboutMe;  // ✅ Ensure this is here!
+export default AboutMe;
+

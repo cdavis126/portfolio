@@ -1,23 +1,29 @@
 /* ======= HOME PAGE LAYOUT ======= */
 .home {
   display: flex;
+  flex-direction: row; /* Ensures MySpace layout */
   gap: 20px;
   max-width: 1200px;
   margin: auto;
   padding-top: 20px;
 }
 
-/* Left Column */
+.header, .top-bar, .bottom-bar {
+  position: relative;
+  z-index: 10; /* Keeps it above other elements */
+}
+
+/* ======= LEFT COLUMN (PROFILE & SIDEBAR) ======= */
 .left-column {
-  width: 40%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Right Column */
+/* ======= RIGHT COLUMN (MAIN CONTENT) ======= */
 .right-column {
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -29,11 +35,11 @@
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  border: 2px solid var(--primary-pink); /* Ensuring consistency */
+  border: 2px solid var(--primary-pink);
 }
 
 .profile-name {
-  font-size: 48.2px;
+  font-size: 36px;
   font-family: var(--font-heading);
   font-weight: bold;
   color: var(--primary-pink);
@@ -48,48 +54,21 @@
   margin-bottom: 15px;
 }
 
-.profile-info p {
-  margin: 5px 0;
-}
-
 /* ======= ABOUT ME SNIPPET ======= */
 .about-me-snippet {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
-  border-top: 5px solid var(--primary-pink); 
+  border-top: 5px solid var(--primary-pink);
   text-align: center;
 }
 
-/* Avoids duplicate styles from Global.css */
 .about-me-snippet h2 {
   font-size: 22px;
   font-family: var(--font-heading);
   font-weight: bold;
   color: var(--primary-pink);
   margin-bottom: 10px;
-}
-
-.about-me-snippet p {
-  font-size: 16px;
-  font-family: var(--font-body);
-  color: var(--text-white);
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: var(--primary-pink);
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.read-more:hover {
-  color: var(--secondary-purple);
-  text-decoration: underline;
 }
 
 /* ======= ACCORDION STYLING ======= */
@@ -141,21 +120,21 @@
 /* ======= STATUS BOX ======= */
 .status-box {
   border: 3px solid;
-  border-image: var(--gradient) 1; /* Gradient Border */
+  border-image: var(--gradient) 1;
   padding: 15px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle Background */
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   color: var(--primary-pink);
   max-width: 600px;
   margin: 20px auto;
 }
 
-/* Ensuring the text gets the gradient effect */
 .status-box h2 {
   background: var(--gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: var(--font-heading);

@@ -54,15 +54,21 @@ a:hover {
 }
 
 /* ========== BUTTON STYLES ========== */
+/* ====== GLOBAL BUTTON STYLES ====== */
 .btn-custom {
-  background: var(--gradient);
+  background: var(--secondary-purple); /* Purple Button */
+  color: var(--text-white); /* White Text */
   border: none;
-  color: var(--text-white);
   font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.1s;
 }
 
 .btn-custom:hover {
-  background: var(--secondary-purple);
+  background: var(--primary-pink); /* Pink Hover Effect */
+  color: var(--text-white);
+  transform: scale(1.05);
 }
 
 /* ========== BOOTSTRAP GRID HELPERS ========== */
