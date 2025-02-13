@@ -1,7 +1,7 @@
 # 🚀 React Portfolio - Cherie Davis
 
 ## 🌍 Live Demo  
-Deployed React Portfolio: [Click here to view](https://cheriedavisportfoilio.netlify.app/
+Deployed React Portfolio: [Click here to view](https://67ad386a086c68b939a756a8--legendary-narwhal-1169f6.netlify.app/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b2d15881-6a13-4b17-a558-7895b1ccb46a/deploy-status)](https://app.netlify.com/sites/cheriedavisportfoilio/deploys))
 
 ## 📖 Description  

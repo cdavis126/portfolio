@@ -4,7 +4,8 @@ import CareerSnapshot from '../components/CareerSnapshot';
 import StatusBox from '../components/statusbox';
 import ProjectsCarousel from '../components/ProjectsCarousel';
 import AboutMeSnippet from '../components/AboutMeSnippet';
-import '../styles/home.css';
+import '../styles/Home.css';
+
 
 const Home = () => {
   return (

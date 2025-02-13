@@ -1,1 +1,4 @@
 echo "dist/" >> .gitignore
+
+# Local Netlify folder
+.netlify
